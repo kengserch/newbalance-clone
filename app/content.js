@@ -67,10 +67,10 @@ function content() {
 
       
 
-      <div className="tabs justify-center ml-4 mt-5">
-          <a className={`tab text-base text-black font-semibold tab-bordered ${isActive1 ? ' text-red-700': null} `} onClick={()=> {UpdateToggle(1); toggleClass('1')   }}>Men </a> 
-          <a className={`tab text-base text-black font-semibold tab-bordered ${isActive2 ? ' text-red-700': null} `} onClick={()=> {UpdateToggle(2); toggleClass('2')   }}>WoMen</a> 
-          <a className={`tab text-base text-black font-semibold tab-bordered ${isActive3 ? ' text-red-700': null} `} onClick={()=> {UpdateToggle(3); toggleClass('3')   }}>Kids</a>
+      <div className="tabs justify-center ml-4 mt-5 ">
+          <a className={`tab text-base text-black font-semibold underline decoration-2 underline-offset-[10px] ${isActive1 ? ' text-red-700 underline decoration-red-700 decoration-2 underline-offset-[10px]': null} `} onClick={()=> {UpdateToggle(1); toggleClass('1')   }}>Men </a> 
+          <a className={`tab text-base text-black font-semibold underline decoration-2 underline-offset-[10px] ${isActive2 ? ' text-red-700 underline decoration-red-700 decoration-2 underline-offset-[10px] ': null} `} onClick={()=> {UpdateToggle(2); toggleClass('2')   }}>WoMen</a> 
+          <a className={`tab text-base text-black font-semibold underline decoration-2 underline-offset-[10px] ${isActive3 ? ' text-red-700 underline decoration-red-700 decoration-2 underline-offset-[10px]': null} `} onClick={()=> {UpdateToggle(3); toggleClass('3')   }}>Kids</a>
      </div>
 
    
