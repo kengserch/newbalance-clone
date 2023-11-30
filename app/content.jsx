@@ -8,6 +8,7 @@ function content() {
   function UpdateToggle(id) {
     setToggle(id)
   }
+
   return (
     <>
 
@@ -114,7 +115,8 @@ function content() {
         </div>
         
         <h1 className=" text-black text-xl font-semibold cursor-default mt-4 px-3 md:text-center md:text-2xl md:mt-20">Recommended for you</h1>
-
+        
+        
       </main>
     </>
   )

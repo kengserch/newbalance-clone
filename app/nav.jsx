@@ -74,7 +74,7 @@ function nav() {
         <nav className=" container mx-auto">
           <div className="flex w-100 justify-between items-center ">
             <div className="flex items-center">
-              <a className="text-xl text-black">
+              <a className="text-xl text-black pl-2">
                 <img className=" w-12 h-auto" src="https://i.pinimg.com/originals/d5/62/0a/d5620af0e61c3882e0f164cae98f0cc9.png" alt="" srcset="" />
               </a>
               <div className=" m-3 hidden md:block">
