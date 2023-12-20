@@ -12,7 +12,7 @@ function content() {
   return (
     <>
 
-      <main className='container mx-auto'>
+      <main className='container mx-auto  overflow-y-hidden'>
 
         <div className="m-3 md:hidden">
           <a className="text-sm font-bold m-4" href="">New</a>

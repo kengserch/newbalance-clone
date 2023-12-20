@@ -45,6 +45,12 @@ function nav() {
     }
   }
 
+  const [navbarToggle, setNavbarToggle] = useState(false);
+
+  const NavToggle = () => {
+    setNavbarToggle(!navbarToggle);
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', controlNavbar)
     return () => {
@@ -71,7 +77,9 @@ function nav() {
 
 
       <header className={`border-b-2 w-full flex flex-row justify-between items-center z-10 bg-white fixed  -top-0 h-20`}>
-        <nav className=" container mx-auto">
+
+        <nav className=" container mx-auto z-10 relative">
+
           <div className="flex w-100 justify-between items-center ">
             <div className="flex items-center">
               <a className="text-xl text-black pl-2">
@@ -88,17 +96,14 @@ function nav() {
             </div>
 
             <div className=" flex items-center">
-
               <div className={` flex-none mr-4 lg:hidden ${show && 'opacity-0'}  transition duration-300 ease-in-out `} >
                 <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                 </svg>
               </div>
-
               <div className="hidden lg:block">
                 <input className="w-full  bg-zinc-200  border-1  focus:border-black focus:ring-0 " type="text" placeholder="Search" />
               </div>
-
               <div className=" hidden lg:flex lg:mx-10 ">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 18">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-2 3h4a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z" />
@@ -109,7 +114,6 @@ function nav() {
                   <a className="hover:underline cursor-pointer">Join</a>
                 </div>
               </div>
-
               <div className="flex items-center mr-4">
                 <button className="">
                   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
@@ -117,19 +121,61 @@ function nav() {
                   </svg>
                 </button>
               </div>
-
-              <div className="flex-none mr-4 md:hidden">
-                <button className="">
+              <div className="flex-none mr-4 sm:hidden">
+                <button onClick={NavToggle} className="">
                   <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
                   </svg>
                 </button>
               </div>
-
             </div>
           </div>
+
+          <nav class={`container-fluid top-0 absolute w-full h-[90rem] bg-white ${navbarToggle ? "block" : "hidden"} sm:hidden`}>
+
+            <div class="grid grid-cols-2 grid-flow-col">
+              
+              <div className="grid justify-items-start px-5">
+                <img className=" w-12 h-auto" src="https://i.pinimg.com/originals/d5/62/0a/d5620af0e61c3882e0f164cae98f0cc9.png" alt="" srcset="" />
+              </div>
+
+              <div className="grid justify-items-end content-center px-5">
+                <svg onClick={NavToggle} class=" w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="grid grid-rows-6 grid-flow-col gap-2 px-4">
+              <a className="text-sm font-bold m-2 md:m-4 " href="#">New</a>
+              <a className="text-sm font-bold m-2 md:m-4 " href="#">Men</a>
+              <a className="text-sm font-bold m-2 md:m-4 " href="#">Women</a>
+              <a className="text-sm font-bold m-2 md:m-4 " href="#">Kids</a>
+              <a className="text-sm font-bold m-2 md:m-4 " href="#">Gift Ideas</a>
+              <a className="text-sm font-bold m-2 md:m-4 " href="#">Sale</a>
+            </div>
+
+            <div class="grid grid-rows-6 grid-flow-col gap-2 px-4 mt-6">
+              <a className="text-sm  m-2 md:m-4 " href="#">Login | Join</a>
+              <a className="text-sm  m-2 md:m-4 " href="#">Order Status</a>
+              <a className="text-sm  m-2 md:m-4 " href="#">Return Order</a>
+              <a className="text-sm  m-2 md:m-4 " href="#">FAQ</a>
+              <a className="text-sm  m-2 md:m-4 " href="#">Help</a>
+              <a className="text-sm  m-2 md:m-4 " href="#">Select Store</a>
+            </div>
+
+          </nav>
+
         </nav>
+
+
+
       </header>
+
+
+
+
 
       {/* <div className="fixed m-0 p-0 h-full w-full top-0 bottom-0 overflow-hidden bg-slate-400 z-50">
                 <div>
