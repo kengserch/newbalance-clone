@@ -18,7 +18,7 @@ function content() {
   return (
     <>
 
-      <main className='container mx-auto  overflow-y-hidden'>
+      <main className='container mx-auto'>
 
         <div className="m-3 md:hidden">
           <a className="text-sm font-bold m-4" href="">New</a>
@@ -27,10 +27,15 @@ function content() {
           <a className="text-sm font-bold m-4" href=""> Launch Calendar</a>
         </div>
 
-        <div className=''>
+        <div className='relative lg:mt-[5rem]'>
+          <div data-aos="fade-up" className='absolute flex flex-col pl-10 lg:pl-20 top-[50%] h-[100px] mt-[-50px] items-start'>
+            <h1 className=" text-white text-4xl cursor-default font-bold">Holiday Gifts 2023</h1>
+            <button className="bg-red-600 h-12  px-10 mt-4 text-white hover:bg-white hover:text-red-700 hover:border-red-700 hover:border-2" type="button">Shop Now</button>
+          </div>
           <img className=" lg:block  hidden w-full h-auto  " src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwff0f11fe/images/page-designer/2023/october/16005_Comp_A_Desktop.jpg?sw=1616&sfrm=jpg" />
           <img className="w-full h-auto lg:hidden" src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw55dd73c5/images/page-designer/2023/october/16005_Comp_A_Mobile.jpg?sw=991&sfrm=jpg" alt="" srcset="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw55dd73c5/images/page-designer/2023/october/16005_Comp_A_Mobile.jpg?sw=991&sfrm=jpg 1x, https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw55dd73c5/images/page-designer/2023/october/16005_Comp_A_Mobile.jpg 2x" />
         </div>
+
         <div className="grid grid-rows-3 grid-flow-col gap-4 mt-7 p-3 md:hidden ">
           <h1 className=" text-black text-4xl cursor-default font-bold ">Holiday Gifts 2023</h1>
           <button className="bg-red-600 h-12  text-white hover:bg-white hover:text-red-700 hover:border-red-700 hover:border-2" type="button">Shop Now</button>
@@ -39,13 +44,13 @@ function content() {
 
         <h1 data-aos="fade-up" className=" text-black text-xl font-semibold cursor-default mt-7 px-3 md:text-center md:text-2xl md:mt-20">Trending gifts</h1>
 
-        <div data-aos="fade-up"  className="tabs justify-center ml-4 mt-5 ">
-          <a className={`tab text-base text-black font-semibold underline decoration-2 underline-offset-[10px] ${toggle === 1 ? ' text-red-700 underline decoration-red-700 decoration-2 underline-offset-[10px]' : null} `} onClick={() =>  UpdateToggle(1)  }>Men </a>
-          <a className={`tab text-base text-black font-semibold underline decoration-2 underline-offset-[10px] ${toggle === 2 ? ' text-red-700 underline decoration-red-700 decoration-2 underline-offset-[10px] ' : null} `} onClick={() =>  UpdateToggle(2)  }>WoMen</a>
-          <a className={`tab text-base text-black font-semibold underline decoration-2 underline-offset-[10px] ${toggle === 3 ? ' text-red-700 underline decoration-red-700 decoration-2 underline-offset-[10px]' : null} `} onClick={() =>  UpdateToggle(3) }>Kids</a>
+       <div data-aos="fade-up"  className="flex justify-center ml-4 mt-5 ">
+          <a className={`tab text-base pb-5 text-black font-semibold w-[100px]  lg:w-[200px]  ${toggle === 1 ? ' text-red-700 border-b-4 border-red-700' : 'border-b-[1px] border-black'} `} onClick={() =>  UpdateToggle(1)  }>Men </a>
+          <a className={`tab text-base pb-5 text-black font-semibold w-[100px] lg:w-[200px] ${toggle === 2 ? ' text-red-700 border-b-4 border-red-700 ' : 'border-b-[1px] border-black'} `} onClick={() =>  UpdateToggle(2)  }>Women</a>
+          <a className={`tab text-base pb-5 text-black font-semibold w-[100px] lg:w-[200px] ${toggle === 3 ? ' text-red-700 border-b-4 border-red-700' : 'border-b-[1px] border-black'} `} onClick={() =>  UpdateToggle(3) }>Kids</a>
         </div>
 
-        <div  className={`grid grid-cols-2 gap-2 p-2 none lg:grid-cols-4 lg:m-12 ${toggle === 1 ? "block" : "hidden"} `}>
+        <div  className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 1 ? "block" : "hidden"} `}>
             {productData.mens.map(item =>
               <div data-aos="fade-up">
                 <img className=" w-full h-auto" src={item.img} alt="" srcset="" />
@@ -56,7 +61,7 @@ function content() {
             )}
         </div>
 
-        <div  className={`grid grid-cols-2 gap-2 p-2 none lg:grid-cols-4 lg:m-12 ${toggle === 2 ? "block" : "hidden"} `}>
+        <div  className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 2 ? "block" : "hidden"} `}>
         {productData.womens.map(item =>
               <div data-aos="fade-up">
                 <img className=" w-full h-auto" src={item.img} alt="" srcset="" />
@@ -68,7 +73,7 @@ function content() {
 
         </div>
 
-        <div className={`grid grid-cols-2 gap-2 p-2 none lg:grid-cols-4 lg:m-12 ${toggle === 3 ? "block" : "hidden"} `}>
+        <div className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 3 ? "block" : "hidden"} `}>
           {productData.kids.map(item =>
               <div data-aos="fade-up">
                 <img className=" w-full h-auto" src={item.img} alt="" srcset="" />

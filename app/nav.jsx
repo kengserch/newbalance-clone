@@ -82,7 +82,7 @@ function nav() {
 
 
 
-      <header className={`border-b-2 w-full flex flex-row justify-between items-center z-10 bg-white fixed  -top-0 h-20`}>
+      <header className={`border-b-2 w-full flex flex-row justify-between items-center z-10 bg-white fixed  top-0 h-20`}>
 
         <nav className=" container sm:container-fluid  mx-auto z-10">
 
@@ -173,10 +173,7 @@ function nav() {
               <a className="text-sm  m-2 md:m-4 " href="#">Select Store</a>
             </div>
 
-          </nav>
-
-
-
+        </nav>
       </header>
 
 
