@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 
 
-function nav() {
+function Nav() {
 
   // function useScrollDirection() {
   //     const [scrollDirection, setScrollDirection] = useState(null);
@@ -206,4 +206,4 @@ function nav() {
   )
 }
 
-export default nav
+export default Nav

@@ -3,7 +3,7 @@ import { productData } from "./data"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-function content() {
+function Content() {
 
   useEffect(() => {
    Aos.init();
@@ -133,4 +133,4 @@ function content() {
   )
 }
 
-export default content
+export default Content

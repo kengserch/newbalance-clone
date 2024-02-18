@@ -5,7 +5,7 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { AiOutlineYoutube } from "react-icons/ai";
 
-function footer() {
+function Footer() {
 
     const [isActive1, setActive1] = useState(false);
     const [isActive2, setActive2] = useState(false);
@@ -131,4 +131,4 @@ function footer() {
   )
 }
 
-export default footer
+export default Footer
