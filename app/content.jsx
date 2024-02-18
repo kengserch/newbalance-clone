@@ -52,7 +52,7 @@ function Content() {
 
         <div  className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 1 ? "block" : "hidden"} `}>
             {productData.mens.map(item =>
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" key={item.id}>
                 <img className=" w-full h-auto" src={item.img} alt="" srcset="" />
                 <p className=" underline font-bold">{item.title}</p>
                 <p className=" text-sm">{item.sex}</p>
@@ -63,7 +63,7 @@ function Content() {
 
         <div  className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 2 ? "block" : "hidden"} `}>
         {productData.womens.map(item =>
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" key={item.id}>
                 <img className=" w-full h-auto" src={item.img} alt="" srcset="" />
                 <p className=" underline font-bold">{item.title}</p>
                 <p className=" text-sm">{item.sex}</p>
@@ -75,7 +75,7 @@ function Content() {
 
         <div className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 3 ? "block" : "hidden"} `}>
           {productData.kids.map(item =>
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" key={item.id}>
                 <img className=" w-full h-auto" src={item.img} alt="" srcset="" />
                 <p className=" underline font-bold">{item.title}</p>
                 <p className=" text-sm">{item.sex}</p>
