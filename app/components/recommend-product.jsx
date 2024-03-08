@@ -1,6 +1,7 @@
 import React from 'react'
 import { productData } from "../data"
-function product() {
+
+function Recommend() {
 
     return (
         <>       
@@ -18,4 +19,4 @@ function product() {
     )
 }
 
-export default product
+export default Recommend

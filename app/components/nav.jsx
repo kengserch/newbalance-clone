@@ -139,9 +139,9 @@ function Nav() {
           
         </nav>
         
-        <nav class={` top-0 absolute w-full h-[90rem] z-40 bg-white  transition duration-200 ${navbarToggle ? "translate-x-0" : "translate-x-[100%]"} md:hidden `}>
+        <nav className={` top-0 absolute w-full h-[90rem] z-40 bg-white  transition duration-200 ${navbarToggle ? "translate-x-0" : "translate-x-[100%]"} md:hidden `}>
 
-            <div class="grid grid-cols-2 grid-flow-col">
+            <div className="grid grid-cols-2 grid-flow-col">
               
               <div className="grid justify-items-start px-5 py-5 sm:px-12">
                 <img className=" w-12 h-auto" src="https://i.pinimg.com/originals/d5/62/0a/d5620af0e61c3882e0f164cae98f0cc9.png" alt="" srcset="" />

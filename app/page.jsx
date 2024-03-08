@@ -9,11 +9,12 @@ import 'aos/dist/aos.css'
 import Product from "./components/product";
 import Recommend from "./components/recommend-product";
 
-export default function page() {
+export default function Page() {
 
   useEffect(() => {
     Aos.init();
   }, [])
+
   
   return (
     <>

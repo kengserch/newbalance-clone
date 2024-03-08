@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { productData } from "../data"
-function product() {
+function Product() {
 
     const [toggle, setToggle] = useState(1)
  
@@ -77,4 +77,4 @@ function product() {
     )
 }
 
-export default product
+export default Product
