@@ -14,10 +14,31 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+  
   },
   plugins: [ 
     require("flowbite/plugin"),
     require("daisyui"),
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          width: '100%',
+          '@screen xl': {
+            maxWidth: '1800px',
+          },
+        }
+      })
+    },
+    function ({ addComponents }) {
+      addComponents({
+        '.container-nav': {
+          width: '100%',
+          '@screen xl': {
+            maxWidth: '1400px',
+          },
+        }
+      })
+    }
   ],
 
   daisyui: {

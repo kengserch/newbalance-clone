@@ -1,5 +1,6 @@
 import React, { useState , useEffect } from 'react'
 
+import Image from 'next/image'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,7 +45,7 @@ function Product() {
             <div className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 1 ? "block  " : "hidden"} `}>
                 {productData.mens.map(item =>
                     <div data-aos="fade-up" key={item.title} className='outline-none' >
-                        <img className=" w-full h-auto" src={item.img} alt="" srcset="" />
+                        <img src={item.img} className="w-full h-auto" alt="Picture of Mens Product" />
                         <p className=" font-bold">{item.title}</p>
                         <p className=" text-sm">{item.sex}</p>
                         <p className=" text-m font-semibold">{item.price}</p>
@@ -55,7 +56,7 @@ function Product() {
             <div className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 2 ? "block" : "hidden"} `}>
                 {productData.womens.map(item =>
                     <div data-aos="fade-up" key={item.title} className='outline-none' >
-                        <img className=" w-full h-auto" src={item.img} alt="" srcset="" />
+                      <img src={item.img} className="w-full h-auto" alt="Picture of Womens Product" />
                         <p className=" font-bold">{item.title}</p>
                         <p className=" text-sm">{item.sex}</p>
                         <p className=" text-m font-semibold">{item.price}</p>
@@ -66,7 +67,7 @@ function Product() {
             <div className={`grid grid-cols-2 gap-2 p-2 pt-5 none lg:grid-cols-4 lg:m-12 ${toggle === 3 ? "block" : "hidden"} `}>
                 {productData.kids.map(item =>
                     <div data-aos="fade-up" key={item.title} className='outline-none' >
-                        <img className=" w-full h-auto" src={item.img} alt="" srcset="" />
+                      <img src={item.img} className="w-full h-auto" alt="Picture of Kids Product" />
                         <p className=" font-bold">{item.title}</p>
                         <p className=" text-sm">{item.sex}</p>
                         <p className=" text-m font-semibold">{item.price}</p>
