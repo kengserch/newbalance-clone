@@ -37,7 +37,7 @@ function Footer() {
             <div className='lg:grid lg:grid-cols-4 lg:p-5 lg:gap-10'>
                <div className='py-4 '>
                     <button onClick={toggleClass1} className='flex items-center justify-between w-full'>
-                        <span className=' font-bold text-sm'> Help</span>
+                        <span className=' font-bold text-sm lg:cursor-default'> Help</span>
                         <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive1 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                         </svg>
@@ -56,7 +56,7 @@ function Footer() {
                 
                <div className='py-4'>
                     <button onClick={toggleClass2} className='flex items-center justify-between w-full'>
-                        <span className=' font-bold text-sm'> Shop</span>
+                        <span className=' font-bold text-sm lg:cursor-default'> Shop</span>
                         <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive2 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                         </svg>
@@ -75,7 +75,7 @@ function Footer() {
 
                <div className='py-4'>
                     <button onClick={toggleClass3} className='flex items-center justify-between w-full'>
-                        <span className=' font-bold text-sm'> About Us</span>
+                        <span className=' font-bold text-sm lg:cursor-default'> About Us</span>
                         <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive3 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                         </svg>
@@ -94,7 +94,7 @@ function Footer() {
 
                <div className='py-4'>
                     <button onClick={toggleClass4} className='flex items-center justify-between w-full'>
-                        <span className=' font-bold text-sm'> For you</span>
+                        <span className=' font-bold text-sm lg:cursor-default'> For you</span>
                         <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive4 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                         </svg>

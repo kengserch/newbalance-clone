@@ -1,26 +1,20 @@
 "use client"
 
 import React, { useEffect } from 'react'
-import Slider from "react-slick";
-import Product from "./components/product";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+
+
+import Product from "./components/product";
+import Recommend from "./components/recommend-product";
 
 export default function page() {
 
   useEffect(() => {
     Aos.init();
   }, [])
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    
-  }
+  
   return (
     <>
 
@@ -60,15 +54,15 @@ export default function page() {
         <div className=" grid grid-cols-2 gap-2 p-3 mt-10 lg:grid-cols-3">
           <div data-aos="fade-up">
             <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw34a69c42/images/page-designer/2023/october/16005_Comp_I_Image1.jpg?sw=660&sfrm=jpg" alt="" srcset="" />
-            <p className='font-bold text-sm underline pt-4'>Gifts for men</p>
+            <p className='font-bold text-sm  pt-4'>Gifts for men</p>
           </div>
           <div data-aos="fade-up">
             <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dwa68da0e4/images/page-designer/2023/october/16005_Comp_I_Image2.jpg?sw=660&sfrm=jpg" alt="" srcset="" />
-            <p className='font-bold text-sm underline pt-4'>Gifts for women</p>
+            <p className='font-bold text-sm  pt-4'>Gifts for women</p>
           </div>
           <div data-aos="fade-up" className='hidden lg:block'>
             <img src="https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw32e7e1cf/images/page-designer/2023/october/16005_Comp_I_Image3.jpg?sw=660&sfrm=jpg" alt="" srcset="" />
-            <p className='font-bold text-sm underline pt-4'>Gifts for kids</p>
+            <p className='font-bold text-sm  pt-4'>Gifts for kids</p>
           </div>
         </div>
 
@@ -94,6 +88,8 @@ export default function page() {
         </div>
 
         <h1 data-aos="fade-up" className=" text-black text-xl font-semibold cursor-default mt-4 px-3 md:text-center md:text-2xl md:mt-20">Recommended for you</h1>
+
+        <Recommend></Recommend>
 
 
       </main>
