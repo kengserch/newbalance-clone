@@ -38,11 +38,11 @@ function Footer() {
                <div className='py-4 '>
                     <button onClick={toggleClass1} className='flex items-center justify-between w-full lg:cursor-default'>
                         <span className=' font-bold text-sm lg:cursor-default'> Help</span>
-                        <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive1 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                        <svg className={`w-4 h-4 text-gray-800 dark:text-white ${isActive1 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                         </svg>
-                        <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive1 ? "block" : "hidden"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
+                        <svg className={`w-4 h-4 text-gray-800 dark:text-white ${isActive1 ? "block" : "hidden"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
                         </svg>
                     </button>
                     <ul className={` text-sm mt-3 ${isActive1 ? "block" : "hidden"} lg:block`}>
@@ -57,11 +57,11 @@ function Footer() {
                <div className='py-4'>
                     <button onClick={toggleClass2} className='flex items-center justify-between w-full lg:cursor-default'>
                         <span className=' font-bold text-sm lg:cursor-default'> Shop</span>
-                        <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive2 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                        <svg className={`w-4 h-4 text-gray-800 dark:text-white ${isActive2 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                         </svg>
-                        <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive2 ? "block" : "hidden"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
+                        <svg className={`w-4 h-4 text-gray-800 dark:text-white ${isActive2 ? "block" : "hidden"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
                         </svg>
                     </button>
                     <ul className={`text-sm mt-3 ${isActive2 ? "block" : "hidden"} lg:block`}>
@@ -76,14 +76,14 @@ function Footer() {
                <div className='py-4'>
                     <button onClick={toggleClass3} className='flex items-center justify-between w-full lg:cursor-default'>
                         <span className=' font-bold text-sm lg:cursor-default'> About Us</span>
-                        <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive3 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                        <svg className={`w-4 h-4 text-gray-800 dark:text-white ${isActive3 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                         </svg>
-                        <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive3 ? "block" : "hidden"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
+                        <svg className={`w-4 h-4 text-gray-800 dark:text-white ${isActive3 ? "block" : "hidden"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
                         </svg>
                     </button>
-                    <ul className={` text-sm mt-3  ${isActive3 ? "block " : "hidden"} lg:block`}>
+                    <ul className={` text-sm mt-3 ${isActive3 ? "block " : "hidden"} lg:block`}>
                         <li className='pt-2'>Our Purpose</li>
                         <li className='pt-2'>Responsible Leadership</li>
                         <li className='pt-2'>Careers</li>
@@ -95,11 +95,11 @@ function Footer() {
                <div className='py-4'>
                     <button onClick={toggleClass4} className='flex items-center justify-between w-full lg:cursor-default'>
                         <span className=' font-bold text-sm lg:cursor-default'> For you</span>
-                        <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive4 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                        <svg className={`w-4 h-4 text-gray-800 dark:text-white ${isActive4 ? "hidden" : "block"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
                         </svg>
-                        <svg class={`w-4 h-4 text-gray-800 dark:text-white ${isActive4 ? "block" : "hidden"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
+                        <svg className={`w-4 h-4 text-gray-800 dark:text-white ${isActive4 ? "block" : "hidden"} lg:hidden` } aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
                         </svg>
                     </button>
                     <ul className={` text-sm mt-3 ${isActive4 ? "block" : "hidden"} lg:block`}>
@@ -115,7 +115,7 @@ function Footer() {
 
             <div className='lg:ml-16 lg:p-5 xl:pl-[20%]'>
                 <div>
-                    <img className=' w-16 h-16' src="https://www.newbalance.com/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw3de6aa04/images/homepage/footer/logo.svg" alt="" srcset="" />
+                    <img className=' w-16 h-16' src="https://www.newbalance.com/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw3de6aa04/images/homepage/footer/logo.svg"/>
                 </div>
                 <div>
                     <p className='text-base font-normal leading-loose xl:w-[30rem]'>Independent since 1906, we empower people through sport and craftsmanship to create positive change in communities around the world.</p>

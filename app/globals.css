@@ -3,3 +3,61 @@
 @tailwind utilities;
 
 
+
+.carousel__list {
+    align-items: center;
+    display: grid;
+    grid-row-gap: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    max-width: 40rem;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    list-style-type: none;
+}
+.carousel__item {
+    grid-column: 1;
+    grid-row: 1;
+    line-height: 1.2;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.carousel__item.active {
+    transform: translateX(0);
+}
+.carousel__item.left {
+    transform: translateX(-110%);
+}
+.carousel__item.right {
+    transform: translateX(110%);
+}
+
+.carousel__indicator {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 2;
+    justify-self: center;
+}
+
+.carousel__dot {
+    border-radius: 100%;
+    background-color: #ccc;
+    display: block;
+    height: 5px;
+    width: 5px;
+}
+.carousel__dot.active {
+    background-color: #000;
+    
+}
+
+
+.slick-next:before{
+    color: black !important;
+    font-size: 25px !important;
+}
+.slick-prev:before{
+    color: black !important;
+    font-size: 25px !important;
+}
